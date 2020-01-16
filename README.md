@@ -14,3 +14,23 @@ success Saved package.json
 $
 ```
 
+```bash
+$ yarn add node-rsa
+yarn add v1.21.1
+info No lockfile found.
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 🔨  Building fresh packages...
+success Saved lockfile.
+success Saved 3 new dependencies.
+info Direct dependencies
+└─ node-rsa@1.0.7
+info All dependencies
+├─ asn1@0.2.4
+├─ node-rsa@1.0.7
+└─ safer-buffer@2.1.2
+✨  Done in 4.23s.
+$
+```
+
