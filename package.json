@@ -1,0 +1,8 @@
+{
+  "name": "js-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:liweinan/js-playground.git",
+  "author": "阿男 <l.weinan@gmail.com>",
+  "license": "MIT"
+}
