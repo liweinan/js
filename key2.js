@@ -13,6 +13,7 @@ const key = new nodeRSA('-----BEGIN RSA PRIVATE KEY-----\n'+
     '-----END RSA PRIVATE KEY-----');
 
 // encrypt方法是公钥加密
+// 私钥可以推导出公钥：https://stackoverflow.com/questions/696472/given-a-private-key-is-it-possible-to-derive-its-public-key
 console.log(key.encrypt("Hello, world!").toJSON());
 // 公钥和私钥加密出来的数据是不一样的
 console.log(key.encryptPrivate("Hello, world!").toJSON());
@@ -29,7 +30,7 @@ const pubKey = new nodeRSA('-----BEGIN PUBLIC KEY-----\n' +
     'KY4kQIIx8JEBsAYzgyP2iy0CAwEAAQ==\n' +
     '-----END PUBLIC KEY-----');
 
-console.log(pubKey.encrypt("Hello, world"));
+console.log(pubKey.encrypt("Hello, world").toJSON());
 // 公钥没法做私钥加密
 // 但是私钥可以既做公钥加密也可以做私钥加密
 console.log(pubKey.encryptPrivate("Hello, world"));
